@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="IronPulse Fitness: programs, trainers, plans and tools.">
+<title>BMI &amp; Calorie Tools | IronPulse Fitness</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap bar">
+<a class="logo" href="index.html">Iron<b>Pulse</b></a>
+<button id="navbtn" aria-expanded="false" aria-controls="nav">Menu</button>
+<nav id="nav" aria-label="Main"><ul><li><a href="index.html">Home</a></li><li><a href="programs.html">Programs</a></li><li><a href="trainers.html">Trainers</a></li><li><a href="membership.html">Membership</a></li><li><a href="tools.html" aria-current="page">BMI &amp; Calorie</a></li><li><a href="schedule.html">Schedule</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+</div></header>
+<main>
+<section class="ph"><div class="wrap"><h1>BMI &amp; calorie tools</h1><p>Quick calculators and a stopwatch for your workout.</p></div></section>
+<section><div class="wrap"><div class="two">
+<form id="bmiForm" class="card" novalidate>
+<h2>BMI calculator</h2>
+<div class="field"><label for="bh">Height (cm)</label><input id="bh" type="number" min="50" max="250" step="any"></div>
+<div class="field"><label for="bw">Weight (kg)</label><input id="bw" type="number" min="10" max="400" step="any"></div>
+<button class="btn" type="submit">Calculate BMI</button>
+<p class="out" id="bmiOut" aria-live="polite"></p>
+</form>
+<form id="calForm" class="card" novalidate>
+<h2>Calorie calculator</h2>
+<div class="field"><label for="ca">Age (years)</label><input id="ca" type="number" min="14" max="90"></div>
+<div class="field"><label for="cs">Sex</label><select id="cs"><option value="m">Male</option><option value="f">Female</option></select></div>
+<div class="field"><label for="ch">Height (cm)</label><input id="ch" type="number" min="100" max="250"></div>
+<div class="field"><label for="cw">Weight (kg)</label><input id="cw" type="number" min="25" max="300"></div>
+<div class="field"><label for="cact">Activity</label><select id="cact"><option value="1.2">Little or no exercise</option><option value="1.375">Light (1 to 3 days a week)</option><option value="1.55" selected>Moderate (3 to 5 days a week)</option><option value="1.725">Hard (6 to 7 days a week)</option></select></div>
+<div class="field"><label for="cg">Goal</label><select id="cg"><option value="-500">Lose weight</option><option value="0" selected>Maintain weight</option><option value="300">Gain muscle</option></select></div>
+<button class="btn" type="submit">Calculate calories</button>
+<p class="out" id="calOut" aria-live="polite"></p>
+</form></div>
+<p style="margin-top:12px">These are estimates, not medical advice.</p>
+<div class="card" style="margin-top:24px">
+<h2>Workout stopwatch</h2>
+<p class="time" id="swTime" role="timer">00:00.00</p>
+<div class="row"><button class="btn" id="swStart">Start</button><button class="btn alt" id="swStop">Stop</button><button class="btn ghost" id="swLap">Lap</button><button class="btn ghost" id="swReset">Reset</button></div>
+<ol id="laps"></ol>
+</div></div></section>
+</main>
+<footer><div class="wrap">&copy; 2026 IronPulse Fitness &middot; Open 5:30 AM to 10:30 PM, every day</div></footer>
+<script src="script.js"></script>
+</body>
+</html>
