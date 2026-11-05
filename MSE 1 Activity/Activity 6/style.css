@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+    background-color: #f5f0e8;
+}
+
+.menu {
+    width: 700px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border: 2px solid #333;
+    border-radius: 15px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+/* Common section styling */
+
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+section h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+/* Starters */
+
+.starters {
+    background-color: #fff3e0;
+    border: 2px solid #ff9800;
+}
+
+.starters h2 {
+    color: #e65100;
+}
+
+/* Main Course */
+
+.main-course {
+    background-color: #e8f5e9;
+    border: 2px solid #4caf50;
+}
+
+.main-course h2 {
+    color: #2e7d32;
+}
+
+/* Desserts */
+
+.desserts {
+    background-color: #fce4ec;
+    border: 2px solid #e91e63;
+}
+
+.desserts h2 {
+    color: #c2185b;
+}
+
+/* Food Items */
+
+.item {
+    background-color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+.item h3 {
+    margin: 0;
+}
+
+.item p {
+    color: #555;
+}
+
+.item span {
+    font-weight: bold;
+    color: #222;
+}
