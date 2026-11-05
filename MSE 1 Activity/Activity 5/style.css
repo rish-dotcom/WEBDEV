@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 30px;
+}
+
+h1 {
+    color: #222;
+    margin-bottom: 25px;
+}
+
+table {
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th,
+td {
+    border: 2px solid #333;
+    padding: 15px;
+    text-align: center;
+}
+
+th {
+    background-color: #222;
+    color: white;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+.lunch {
+    background-color: #ddd;
+    font-weight: bold;
+    writing-mode: vertical-rl;
+}
